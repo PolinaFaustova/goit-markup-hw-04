@@ -77,19 +77,13 @@ p {
   display: block;
 }
 
-.site-nav-list,
-.contacts-header {
+.site-nav-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-}
-.site-nav-list {
   margin-left: 93px;
-}
-.contacts-header {
-  margin-left: auto;
 }
 
 .site-nav-list .link-current,
@@ -116,7 +110,17 @@ p {
 .web {
   color: var(--blue-color);
 }
+.contacts-header {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .contacts-header .item + .item {
   margin-left: 50px;
 }
@@ -127,6 +131,18 @@ p {
 .contacts-header a:focus {
   color: var(--blue-color);
 }
+.icon-mail ,
+.icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+/* .icon-mail:hover ,
+.icon-tel:hover ,
+.icon-mail:focus ,
+.icon-tel:focus 
+{
+  color: var(--blue-color);
+} */
 
 /* Контейнер*/
 .container {
@@ -381,6 +397,14 @@ background-image: url();
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: var(--blue-color);
+}
+.footer-item {
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: #FFFFFF;
 }
 
 /* Портфоліо */
