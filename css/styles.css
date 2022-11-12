@@ -251,6 +251,11 @@ p {
   cursor: pointer;
   width: 73px;
 }
+.button-primary:hover ,
+.button-primary:focus {
+background-color: var(--total-white);
+color: var(--blue-color);
+}
 /* Секція якості quality */
 .quality-item {
   display: flex;
@@ -260,26 +265,9 @@ p {
 .quality-h-p {
   flex-basis: calc((100%-90px) / 4);
 }
-.quality-h-p::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-color: #F5F4FA;;
-}
-.icon-uvaga::before {
-background-image: url();
-}
-.icon-punktualnist::before {
-background-image: url();
-}
-.icon-plan::before {
-background-image: url();
-}
-.icon-tehno::before {
-background-image: url();
-}
 .quality-h {
   margin-bottom: 10px;
+  margin-top: 30px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -293,7 +281,18 @@ background-image: url();
   letter-spacing: 0.03em;
   color: var(--p-color);
 }
-
+.quality-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+  width: 270px;
+  height: 120px;
+  background: var(--background-btn);
+}
+.icons-item {
+}
 /* Секція чим ми займаємося doing */
 .section-doing {
   padding-top: 0;
@@ -314,7 +313,26 @@ background-image: url();
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+/* Doing icons */
+.doing-icons {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.doing-icons-item {
+width: 44px;
+height: 44px;
+}
+.icons-social {
+width: 100%;
+height: 100%;
+display: block;
+background-color: var(--blue-color);
+border-radius: 50%;
+}
+.icons-social-doing {
+fill: currentColor;
+}
 /* Наша команда team */
 .team-item {
   display: flex;
@@ -347,6 +365,8 @@ background-image: url();
   letter-spacing: 0.03em;
 }
 .team-position {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
