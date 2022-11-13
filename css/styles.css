@@ -126,6 +126,8 @@ p {
 }
 .contacts-header a {
   color: var(--p-color);
+  display: flex;
+  align-items: center;
 }
 .contacts-header a:hover,
 .contacts-header a:focus {
@@ -136,13 +138,6 @@ p {
   margin-right: 10px;
   fill: currentColor;
 }
-/* .icon-mail:hover ,
-.icon-tel:hover ,
-.icon-mail:focus ,
-.icon-tel:focus 
-{
-  color: var(--blue-color);
-} */
 
 /* Контейнер*/
 .container {
@@ -392,7 +387,6 @@ p {
 .clients-items {
   width: 170px;
   height: 92px;
-  display: flex;
 }
 .clients-link {
   width: 100%;
@@ -416,6 +410,7 @@ p {
 /* футер */
 .footer-bck .container {
   display: flex;
+  align-items: baseline;
 }
 .footer-bck {
   background-color: var(--background-black);
@@ -466,9 +461,16 @@ p {
   margin-left: 70px;
 }
 .footer-item {
+  margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
   color: var(--total-white);
 }
 .footer-icons {
@@ -486,7 +488,6 @@ p {
 .icons-social-links {
   width: 100%;
   height: 100%;
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,13 +511,13 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 .port {
   display: block;
 }
 .port:hover,
 .port:focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
